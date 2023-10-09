@@ -11,3 +11,47 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.logo_cont {
+  display: flex; 
+  align-items: center; 
+  width: 85%
+}
+
+.logo_cont img {
+  width: 50px; 
+  display: inline
+}
+
+.logo_cont h5 {
+  text-transform: uppercase; 
+  margin-left: 20px;
+  text-align: start;
+}
+
+.logo_cont h4 {
+  color: #fff;
+  text-align: start;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-size: 1.25rem;
+}
+
+iframe
+{
+    display: none;
+}
+
+* {
+  text-align: start;
+}
+
+.align_center {
+  text-align: center;
+}
+
+#reviews-tab,
+#dashboard-tab {
+  text-align: center;
+}
