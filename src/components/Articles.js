@@ -1,5 +1,13 @@
 import React from "react";
 
+function importAll(r) {
+    let images = {};
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    return images;
+  }
+  
+const news = importAll(require.context('../images/news', false, /\.(png|jpe?g|svg)$/));
+
 
 const Articles = () => {
     return (
@@ -17,7 +25,7 @@ const Articles = () => {
                 <div className="col-lg-6">
                     <div className="singel-news mt-30">
                         <div className="news-thum pb-25">
-                            <img src="images/news/n-1.jpg" alt="News"/>
+                            <img src={news['n-1.jpg']} alt="News"/>
                         </div>
                         <div className="news-cont">
                             <ul>
@@ -34,7 +42,7 @@ const Articles = () => {
                         <div className="row">
                             <div className="col-sm-4">
                                 <div className="news-thum mt-30">
-                                    <img src="images/news/ns-1.jpg" alt="News"/>
+                                    <img src={news['ns-1.jpg']} alt="News"/>
                                 </div>
                             </div>
                             <div className="col-sm-8">
@@ -53,7 +61,7 @@ const Articles = () => {
                         <div className="row">
                             <div className="col-sm-4">
                                 <div className="news-thum mt-30">
-                                    <img src="images/news/ns-2.jpg" alt="News"/>
+                                    <img src={news['ns-2.jpg']} alt="News"/>
                                 </div>
                             </div>
                             <div className="col-sm-8">
@@ -72,7 +80,7 @@ const Articles = () => {
                         <div className="row">
                             <div className="col-sm-4">
                                 <div className="news-thum mt-30">
-                                    <img src="images/news/ns-3.jpg" alt="News"/>
+                                    <img src={news['ns-3.jpg']} alt="News"/>
                                 </div>
                             </div>
                             <div className="col-sm-8">

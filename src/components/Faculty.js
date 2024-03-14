@@ -1,6 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+function importAll(r) {
+    let images = {};
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    return images;
+  }
+  
+const courses = importAll(require.context('../images/course', false, /\.(png|jpe?g|svg)$/));
+
 
 const Faculty = () => {
     return (
@@ -19,7 +27,7 @@ const Faculty = () => {
                         <div className="singel-course">
                             <div className="thum">
                                 <div className="image">
-                                    <img className="dept_img" src="images/course/cu-5.jpg" alt="Course" />
+                                    <img className="dept_img" src={courses['cu-5.jpg']} alt="Course" />
                                 </div>
                             </div>
                             <div className="cont">
@@ -35,7 +43,7 @@ const Faculty = () => {
                         <div className="singel-course">
                             <div className="thum">
                                 <div className="image">
-                                    <img className="dept_img" src="images/course/cu-2.jpg" alt="Course" />
+                                    <img className="dept_img" src={courses['cu-2.jpg']} alt="Course" />
                                 </div>
                             </div>
                             <div className="cont">
@@ -51,7 +59,7 @@ const Faculty = () => {
                         <div className="singel-course">
                             <div className="thum">
                                 <div className="image">
-                                    <img className="dept_img" src="images/course/cu-3.jpg" alt="Course" />
+                                    <img className="dept_img" src={courses['cu-3.jpg']} alt="Course" />
                                 </div>
                             </div>
                             <div className="cont">
@@ -67,7 +75,7 @@ const Faculty = () => {
                         <div className="singel-course">
                             <div className="thum">
                                 <div className="image">
-                                    <img className="dept_img" src="images/course/cu-1.jpg" alt="Course" />
+                                    <img className="dept_img" src={courses['cu-1.jpg']} alt="Course" />
                                 </div>
                             </div>
                             <div className="cont">
@@ -83,7 +91,7 @@ const Faculty = () => {
                         <div className="singel-course">
                             <div className="thum">
                                 <div className="image">
-                                    <img className="dept_img" src="images/course/cu-4.jpg" alt="Course" />
+                                    <img className="dept_img" src={courses['cu-4.jpg']} alt="Course" />
                                 </div>
                             </div>
                             <div className="cont">

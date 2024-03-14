@@ -1,5 +1,13 @@
 import React from "react";
 
+function importAll(r) {
+    let images = {};
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    return images;
+  }
+  
+  const all_icon = importAll(require.context('../images/all-icon', false, /\.(png|jpe?g|svg)$/));
+
 
 const Facilities = () => {
     return (
@@ -20,7 +28,7 @@ const Facilities = () => {
                                 <li>
                                     <div className="singel-feature">
                                         <div className="icon">
-                                            <img src="images/all-icon/f-1.png" alt="icon" />
+                                            <img src={all_icon['f-1.png']} alt="icon" />
                                         </div>
                                         <div className="cont">
                                             <h4>Global Certificate</h4>
@@ -31,7 +39,7 @@ const Facilities = () => {
                                 <li>
                                     <div className="singel-feature">
                                         <div className="icon">
-                                            <img src="images/all-icon/f-2.png" alt="icon" />
+                                            <img src={all_icon['f-2.png']} alt="icon" />
                                         </div>
                                         <div className="cont">
                                             <h4>Alumni Support</h4>
@@ -42,7 +50,7 @@ const Facilities = () => {
                                 <li>
                                     <div className="singel-feature">
                                         <div className="icon">
-                                            <img src="images/all-icon/f-3.png" alt="icon" />
+                                            <img src={all_icon['f-3.png']} alt="icon" />
                                         </div>
                                         <div className="cont">
                                             <h4>Books & Library</h4>

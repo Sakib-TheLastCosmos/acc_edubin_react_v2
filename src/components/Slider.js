@@ -1,10 +1,18 @@
 import React from "react";
 
+function importAll(r) {
+    let images = {};
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    return images;
+  }
+  
+const slider = importAll(require.context('../images/slider', false, /\.(png|jpe?g|svg)$/));
+
 
 const Slider = () => {
     return (
         <section id="slider-part" className="slider-active">
-            <div className="single-slider bg_cover pt-150" style={{backgroundImage: 'url(images/slider/s-1.jpg)'}} data-overlay="4">
+            <div className="single-slider bg_cover pt-150" style={{backgroundImage: `url(${slider['s-1.jpg']})`}} data-overlay="4">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-7 col-lg-9">
@@ -20,7 +28,7 @@ const Slider = () => {
                 </div>
             </div>
 
-            <div className="single-slider bg_cover pt-150" style={{backgroundImage: 'url(images/slider/s-2.jpg)'}} data-overlay="4">
+            <div className="single-slider bg_cover pt-150" style={{backgroundImage: `url(${slider['s-2.jpg']})`}} data-overlay="4">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-7 col-lg-9">
@@ -36,7 +44,7 @@ const Slider = () => {
                 </div>
             </div>
 
-            <div className="single-slider bg_cover pt-150" style={{backgroundImage: 'url(images/slider/s-3.jpg)'}} data-overlay="4">
+            <div className="single-slider bg_cover pt-150" style={{backgroundImage: `url(${slider['s-3.jpg']})`}} data-overlay="4">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-7 col-lg-9">

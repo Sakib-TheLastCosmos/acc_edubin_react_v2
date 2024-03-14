@@ -13,13 +13,28 @@ import TeachersList from './pages/TeachersList';
 import './css/animate.css'
 import './css/bootstrap.min.css'
 import './css/default.css'
-import './css/font-awesome.min.css'
 import './css/jquery.nice-number.min.css'
 import './css/magnific-popup.css'
 import './css/nice-select.css'
 import './css/responsive.css'
 import './css/slick.css'
 import './css/style.css'
+
+
+// import './js/ajax-contact'
+// import './js/bootstrap.min.js'
+// import './js/jquery.countdown.min.js'
+// import './js/jquery.counterup.min.js'
+// import './js/jquery.magnific-popup.min.js'
+// import './js/jquery.nice-number.min.js'
+// import './js/jquery.nice-select.min.js'
+
+import './main.js'
+// import './js/map-script.js'
+// import './js/validator.min.js'
+
+
+
 
 
 
@@ -40,14 +55,14 @@ function App() {
   //       externalScript.type = "text/javascript";
   //       externalScript.setAttribute("crossorigin", "anonymous");
   //       document.body.appendChild(externalScript);
-  //       externalScript.src = 'js/main.js';
+  //       externalScript.src = 'js/slick.min.js';
   //   };
   //   LoadExternalScript();
   
   
   //   return () => {
   
-  //     document.body.removeChild(externalScript);
+  //     // document.body.removeChild(externalScript);
   //   };
   // }, []);
 

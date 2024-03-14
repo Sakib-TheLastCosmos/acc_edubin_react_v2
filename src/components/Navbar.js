@@ -1,6 +1,17 @@
 import React from 'react'
 import { Navlink, Link, To } from 'react-router-dom'
 
+import logo from '../images/logo.png';
+
+function importAll(r) {
+    let images = {};
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    return images;
+  }
+  
+const all_icon = importAll(require.context('../images/all-icon', false, /\.(png|jpe?g|svg)$/));
+
+
 
 const Navbar = () => {
     return (
@@ -12,8 +23,8 @@ const Navbar = () => {
                         <div className="col-lg-6">
                             <div className="header-contact text-lg-left text-center">
                                 <ul>
-                                    <li><img src="images/all-icon/map.png" alt="icon" /><span>Dhaka Cantonment, Dhaka-1206</span></li>
-                                    <li><img src="images/all-icon/email.png" alt="icon" /><span>info@acc.edu.bd</span></li>
+                                    <li><img src={all_icon['map.png']} alt="icon" /><span>Dhaka Cantonment, Dhaka-1206</span></li>
+                                    <li><img src={all_icon['email.png']} alt="icon" /><span>info@acc.edu.bd</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -27,7 +38,7 @@ const Navbar = () => {
                         <div className="col-lg-4 col-md-4">
                             <div className="logo">
                                 <Link to='/' className='logo_cont'>
-                                    <img src="images/logo.png" alt="Logo"/>
+                                    <img src={logo} alt="Logo"/>
                                     <h5>Adamjee Cantonment College</h5>
                                 </Link>
                             </div>
@@ -36,7 +47,7 @@ const Navbar = () => {
                             <div className="support-button float-right d-none d-md-block">
                                 <div className="support float-left">
                                     <div className="icon">
-                                        <img src="images/all-icon/support.png" alt="icon" />
+                                        <img src={all_icon['support.png']} alt="icon" />
                                     </div>
                                     <div className="cont">
                                         <p>Need Help? call us free</p>

@@ -1,5 +1,13 @@
 import React from "react";
 
+function importAll(r) {
+    let images = {};
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    return images;
+  }
+  
+const testimonial = importAll(require.context('../images/testimonial', false, /\.(png|jpe?g|svg)$/));
+
 
 const Testimonial = () => {
     return (
@@ -17,7 +25,7 @@ const Testimonial = () => {
                     <div className="col-lg-6">
                         <div className="singel-testimonial">
                             <div className="testimonial-thum">
-                                <img src="images/testimonial/t-1.jpg" alt="Testimonial" />
+                                <img src={testimonial['t-1.jpg']} alt="Testimonial" />
                                 <div className="quote">
                                     <i className="fa fa-quote-right"></i>
                                 </div>
@@ -32,7 +40,7 @@ const Testimonial = () => {
                     <div className="col-lg-6">
                         <div className="singel-testimonial">
                             <div className="testimonial-thum">
-                                <img src="images/testimonial/t-2.jpg" alt="Testimonial" />
+                                <img src={testimonial['t-2.jpg']} alt="Testimonial" />
                                 <div className="quote">
                                     <i className="fa fa-quote-right"></i>
                                 </div>
@@ -47,7 +55,7 @@ const Testimonial = () => {
                     <div className="col-lg-6">
                         <div className="singel-testimonial">
                             <div className="testimonial-thum">
-                                <img src="images/testimonial/t-3.jpg" alt="Testimonial" />
+                                <img src={testimonial['t-3.jpg']} alt="Testimonial" />
                                 <div className="quote">
                                     <i className="fa fa-quote-right"></i>
                                 </div>

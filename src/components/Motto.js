@@ -1,6 +1,14 @@
 import React from "react";
 import '../index.css'
 
+function importAll(r) {
+    let images = {};
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    return images;
+  }
+  
+const all_icon = importAll(require.context('../images/all-icon', false, /\.(png|jpe?g|svg)$/));
+
 const Motto = () => {
     return (
         <section id="category-part">
@@ -18,7 +26,7 @@ const Motto = () => {
                                     <a href="#">
                                         <span className="singel-category text-center color-1">
                                             <span className="icon">
-                                                <img src="images/all-icon/ctg-1.png" alt="Icon" />
+                                                <img src={all_icon['ctg-1.png']} alt="Icon" />
                                             </span>
                                             <span className="align_center cont">
                                                 <span className="align_center">Education</span>
@@ -30,7 +38,7 @@ const Motto = () => {
                                     <a href="#">
                                         <span className="singel-category text-center color-2">
                                             <span className="icon">
-                                                <img src="images/all-icon/ctg-2.png" alt="Icon" />
+                                                <img src={all_icon['ctg-2.png']} alt="Icon" />
                                             </span>
                                             <span className="align_center cont">
                                                 <span className="align_center">Discipline</span>
@@ -42,7 +50,7 @@ const Motto = () => {
                                     <a href="#">
                                         <span className="singel-category text-center color-3">
                                             <span className="icon">
-                                                <img src="images/all-icon/ctg-3.png" alt="Icon" />
+                                                <img src={all_icon['ctg-3.png']} alt="Icon" />
                                             </span>
                                             <span className="align_center cont">
                                                 <span className="align_center">Morality</span>
@@ -54,7 +62,7 @@ const Motto = () => {
                                     <a href="#">
                                         <span className="singel-category text-center color-1">
                                             <span className="icon">
-                                                <img src="images/all-icon/ctg-1.png" alt="Icon" />
+                                                <img src={all_icon['ctg-1.png']} alt="Icon" />
                                             </span>
                                             <span className="align_center cont">
                                                 <span className="align_center">Language</span>
@@ -66,7 +74,7 @@ const Motto = () => {
                                     <a href="#">
                                         <span className="singel-category text-center color-2">
                                             <span className="icon">
-                                                <img src="images/all-icon/ctg-2.png" alt="Icon" />
+                                                <img src={all_icon['ctg-2.png']} alt="Icon" />
                                             </span>
                                             <span className="align_center cont">
                                                 <span className="align_center">Business</span>
@@ -78,7 +86,7 @@ const Motto = () => {
                                     <a href="#">
                                         <span className="singel-category text-center color-3">
                                             <span className="icon">
-                                                <img src="images/all-icon/ctg-3.png" alt="Icon" />
+                                                <img src={all_icon['ctg-3.png']} alt="Icon" />
                                             </span>
                                             <span className="align_center cont">
                                                 <span className="align_center">Literature</span>

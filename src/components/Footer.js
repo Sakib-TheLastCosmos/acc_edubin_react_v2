@@ -1,6 +1,8 @@
 import React from "react";
 import '../index.css'
 
+import logo from '../images/logo.png';
+
 
 const Footer = () => {
     return (
@@ -11,7 +13,7 @@ const Footer = () => {
                         <div className="col-lg-4 col-md-6">
                             <div className="footer-about mt-40">
                                 <div className="logo">
-                                    <a className="logo_cont" href="#"><img src="images/logo.png" alt="Logo" /> <h4>Adamjee Cantonment College</h4></a>
+                                    <a className="logo_cont" href="#"><img src={logo} alt="Logo" /> <h4>Adamjee Cantonment College</h4></a>
                                 </div>
                                 <p>Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate.</p>
                                 <ul className="mt-20">
