@@ -10,6 +10,17 @@ import Home from './pages/Home';
 import Teacher from './pages/Teacher';
 import TeachersList from './pages/TeachersList';
 
+import './css/animate.css'
+import './css/bootstrap.min.css'
+import './css/default.css'
+import './css/font-awesome.min.css'
+import './css/jquery.nice-number.min.css'
+import './css/magnific-popup.css'
+import './css/nice-select.css'
+import './css/responsive.css'
+import './css/slick.css'
+import './css/style.css'
+
 
 
 
