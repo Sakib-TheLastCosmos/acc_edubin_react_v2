@@ -1,4 +1,5 @@
 import React from "react";
+import Debate from '../images/debate.jpg'
 
 
 const Notice = () => {
@@ -8,9 +9,12 @@ const Notice = () => {
                 <div className="row">
                     <div className="col-lg-5">
                         <div className="section-title mt-50">
-                            <h5>About us</h5>
-                            <h2>Welcome to Adamjee </h2>
+                            <h5>Update</h5>
+                            <h2>Champion in National Debate Competition! </h2>
                         </div>
+
+                        <img src={Debate} style={{marginTop: 15 + 'px'}} />
+
                         <div className="about-cont">
                             <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt  mauris. <br/> auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt  mauris</p>
                             <a href="#" className="main-btn mt-55">Learn More</a>
@@ -25,7 +29,7 @@ const Notice = () => {
                                 <li>
                                     <div className="singel-event">
                                         <span><i className="fa fa-calendar"></i> 2 December 2018</span>
-                                        <a href="events-singel.html"><h4>Campus clean workshop</h4></a>
+                                        <a href="events-singel.html"><h4>About XI Admission</h4></a>
                                         <span><i className="fa fa-clock-o"></i> 10:00 Am - 3:00 Pm</span>
                                         <span><i className="fa fa-map-marker"></i> Rc Auditorim</span>
                                     </div>
@@ -33,7 +37,7 @@ const Notice = () => {
                                 <li>
                                     <div className="singel-event">
                                         <span><i className="fa fa-calendar"></i> 2 December 2018</span>
-                                        <a href="events-singel.html"><h4>Tech Summit</h4></a>
+                                        <a href="events-singel.html"><h4>Movie outing with the students</h4></a>
                                         <span><i className="fa fa-clock-o"></i> 10:00 Am - 3:00 Pm</span>
                                         <span><i className="fa fa-map-marker"></i> Rc Auditorim</span>
                                     </div>
@@ -41,7 +45,25 @@ const Notice = () => {
                                 <li>
                                     <div className="singel-event">
                                         <span><i className="fa fa-calendar"></i> 2 December 2018</span>
-                                        <a href="events-singel.html"><h4>Enviroement conference</h4></a>
+                                        <a href="events-singel.html"><h4>About upcoming year final exam for XI students</h4></a>
+                                        <span><i className="fa fa-clock-o"></i> 10:00 Am - 3:00 Pm</span>
+                                        <span><i className="fa fa-map-marker"></i> Rc Auditorim</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div className="singel-event">
+                                        <span><i className="fa fa-calendar"></i> 2 December 2018</span>
+                                        <a href="events-singel.html"><h4>Scholarship form</h4></a>
+                                        <span><i className="fa fa-clock-o"></i> 10:00 Am - 3:00 Pm</span>
+                                        <span><i className="fa fa-map-marker"></i> Rc Auditorim</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div className="singel-event">
+                                        <span><i className="fa fa-calendar"></i> 2 December 2018</span>
+                                        <a href="events-singel.html"><h4>Fresher's reception 2023</h4></a>
                                         <span><i className="fa fa-clock-o"></i> 10:00 Am - 3:00 Pm</span>
                                         <span><i className="fa fa-map-marker"></i> Rc Auditorim</span>
                                     </div>
@@ -50,9 +72,6 @@ const Notice = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="about-bg">
-                <img src="images/about/bg-1.png" alt="About" />
             </div>
         </section>
     )

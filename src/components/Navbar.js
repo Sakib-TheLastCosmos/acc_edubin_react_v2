@@ -12,14 +12,9 @@ const Navbar = () => {
                         <div className="col-lg-6">
                             <div className="header-contact text-lg-left text-center">
                                 <ul>
-                                    <li><img src="images/all-icon/map.png" alt="icon" /><span>127/5 Mark street, New york</span></li>
-                                    <li><img src="images/all-icon/email.png" alt="icon" /><span>info@yourmail.com</span></li>
+                                    <li><img src="images/all-icon/map.png" alt="icon" /><span>Dhaka Cantonment, Dhaka-1206</span></li>
+                                    <li><img src="images/all-icon/email.png" alt="icon" /><span>info@acc.edu.bd</span></li>
                                 </ul>
-                            </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <div className="header-opening-time text-lg-right text-center">
-                                <p>Opening Hours : Monday to Saturay - 8 Am to 5 Pm</p>
                             </div>
                         </div>
                     </div> 
@@ -45,7 +40,7 @@ const Navbar = () => {
                                     </div>
                                     <div className="cont">
                                         <p>Need Help? call us free</p>
-                                        <span>321 325 5678</span>
+                                        <span>880-2-8872446</span>
                                     </div>
                                 </div>
                                 <div className="button float-left">
@@ -77,45 +72,76 @@ const Navbar = () => {
                                         <li className="nav-item">
                                             <a href="courses.html">At a glance</a>
                                             <ul className="sub-menu">
-                                                <li><a href="courses.html">Courses</a></li>
-                                                <li><a href="courses-singel.html">Course Singel</a></li>
+                                                <li><a href="courses.html">Welcome Note</a></li>
+                                                <li><a href="courses-singel.html">About Us</a></li>
+                                                <li><a href="courses-singel.html">Why Study in Adamjee</a></li>
+                                                <li><a href="courses-singel.html">Vision & Mission</a></li>
+                                                <li><a href="courses-singel.html">Principal's Message</a></li>
+                                                <li><a href="courses-singel.html">Governing Body</a></li>
+                                                <li><a href="courses-singel.html">Curriculum</a></li>
+                                                <li><a href="courses-singel.html">The Beautiful Campus</a></li>
+                                                <li><a href="courses-singel.html">Maps and Direction</a></li>
                                             </ul>
                                         </li>
 
                                         <li className="nav-item">
                                             <a href="courses.html">Academics</a>
                                             <ul className="sub-menu">
-                                                <li><a href="courses.html">Courses</a></li>
-                                                <li><a href="courses-singel.html">Course Singel</a></li>
+                                            <li><a href="https://acc.edu.bd/organizational-division/">Organizational Division</a></li>
+                                            <li><a href="https://acc.edu.bd/rules-regulation-2/">Rules &amp; Regulation</a></li>
+                                            <li><a href="https://acc.edu.bd/teaching-method/">Teaching Method</a></li>
+                                            <li><a href="https://acc.edu.bd/teachers-training/">Teacher’s Training</a></li>
+                                            <li><a href="https://acc.edu.bd/student-support/">Student Support</a></li>
+                                            <li><a href="https://acc.edu.bd/scholarship/">Scholarship</a></li>
+                                            <li><a href="https://acc.edu.bd/result/">Result</a></li>
+                                            <li><a href="https://acc.edu.bd/co-curricular-activities/">Co-curricular Activities</a></li>
+                                            <li><a href="https://acc.edu.bd/facilities/">Facilities</a></li>
+                                            <li><a href="https://acc.edu.bd/wall-magazines/">Wall Magazines</a></li>
+                                            <li><a href="https://acc.edu.bd/faculties-and-staffs/">Faculties and Staffs</a></li>
+                                            <li><a href="https://acc.edu.bd/prospectus-syllabus/">Prospectus &amp; Syllabus</a></li>
+                                            <li><a href="https://acc.edu.bd/academic-reformation/">Academic Reformation</a></li>
+                                            <li><a href="https://acc.edu.bd/webpages-of-all-departments/">Webpages of All Departments</a></li>
                                             </ul>
                                         </li>
                                         <li className="nav-item">
                                             <a href="events.html">Admission</a>
                                             <ul className="sub-menu">
-                                                <li><a href="events.html">Events</a></li>
-                                                <li><a href="events-singel.html">Event Singel</a></li>
+                                            <li id="menu-item-1462" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1462"><a href="https://acc.edu.bd/https-acc-edu-bd-wp-content-uploads-2022-01-beggopti-hsc-admission_website-pdfadmission-notice/">Admission Notice</a></li>
+                                            <li id="menu-item-554" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-554"><a href="https://acc.edu.bd/undergraduatehsc/">Undergraduate/HSC</a></li>
+                                            <li id="menu-item-555" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-555"><a href="https://acc.edu.bd/graduate-honours/">Graduate/ Honours</a></li>
+                                            <li id="menu-item-556" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-556"><a href="https://acc.edu.bd/post-graduatema/">Post Graduate/MA</a></li>
+                                            <li id="menu-item-557" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-557"><a href="https://acc.edu.bd/bba/">BBA</a></li>
+                                            <li id="menu-item-558" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-558"><a href="https://acc.edu.bd/fee-payment-procedure/">Fee Payment Procedure</a></li>
+                                            <li id="menu-item-559" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-559"><a href="https://acc.edu.bd/a-guide-for-future-prospects/">A guide for future prospects</a></li>
                                             </ul>
                                         </li>
                                         <li className="nav-item">
                                             <a href="teachers.html">Administration</a>
                                             <ul className="sub-menu">
-                                                <li><a href="teachers.html">teachers</a></li>
-                                                <li><a href="teachers-singel.html">teacher Singel</a></li>
+                                            <li id="menu-item-605" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-605"><a href="https://acc.edu.bd/calendar/">Calendar</a></li>
+                                            <li id="menu-item-606" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-606"><a href="https://acc.edu.bd/time/">Time</a></li>
+                                            <li id="menu-item-618" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-618"><a href="https://acc.edu.bd/https-acc-edu-bd-wp-content-uploads-2022-02-advertisement-pdf/">Jobs &amp; Vacancies</a></li>
+                                            <li id="menu-item-609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-609"><a href="https://acc.edu.bd/notice/">Notice</a></li>
+                                            <li id="menu-item-608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-608"><a href="https://acc.edu.bd/https-acc-edu-bd-wp-content-uploads-2022-04-mob-no-teachers-pdf/">Teacher’s Information</a></li>
+                                            <li id="menu-item-610" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-610"><a href="https://acc.edu.bd/https-acc-edu-bd-wp-content-uploads-2022-04-mob-no-admin-pers-1st-2nd-3rd-4th-class-pdf/">Officer’s &amp; Staff’s Information</a></li>
+                                            <li id="menu-item-611" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-611"><a href="https://acc.edu.bd/student-statistics/">Student Statistics</a></li>
                                             </ul>
                                         </li>
                                         <li className="nav-item">
                                             <a href="blog.html">Events</a>
                                             <ul className="sub-menu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog-singel.html">Blog Singel</a></li>
+                                            <li><a>Clubs</a></li>
+                                            <li id="menu-item-667" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-667"><a href="https://acc.edu.bd/study-tour/">Study Tour</a></li>
+                                            <li id="menu-item-672" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-672"><a href="https://acc.edu.bd/google-pilot-project/">Google Pilot Project</a></li>
+                                            <li id="menu-item-668" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-668"><a href="https://acc.edu.bd/celebration-of-national-days/">Celebration of National Days</a></li>
+                                            <li id="menu-item-669" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-669"><a href="https://acc.edu.bd/research-and-publications/">Research and publications</a></li>
+                                            <li id="menu-item-670" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-670"><a href="https://acc.edu.bd/online-magazine/">Magazine</a></li>
+                                            <li id="menu-item-671" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-671"><a href="https://acc.edu.bd/sports-2/">Sports</a></li>
+                                            <li id="menu-item-674" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-674"><a href="https://acc.edu.bd/cultural-activities/">Cultural Activities</a></li>
                                             </ul>
                                         </li>
                                         <li className="nav-item">
                                             <a href="shop.html">Gallery</a>
-                                            <ul className="sub-menu">
-                                                <li><a href="shop.html">Shop</a></li>
-                                                <li><a href="shop-singel.html">Shop Singel</a></li>
-                                            </ul>
                                         </li>
 
                                         <li className="nav-item">
@@ -124,10 +150,6 @@ const Navbar = () => {
 
                                         <li className="nav-item">
                                             <a href="contact.html">Contact</a>
-                                            <ul className="sub-menu">
-                                                <li><a href="contact.html">Contact Us</a></li>
-                                                <li><a href="contact-2.html">Contact Us 2</a></li>
-                                            </ul>
                                         </li>
                                     </ul>
                                 </div>

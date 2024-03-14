@@ -55,3 +55,18 @@ iframe
 #dashboard-tab {
   text-align: center;
 }
+
+marquee a {
+  margin-right: 40px;
+}
+
+.dept_img {
+  width: 30rem;
+  height: 20rem;
+}
+
+.teacher_list_image {
+  width: 30rem !important;
+  height: 25rem;
+  object-fit: cover;
+}

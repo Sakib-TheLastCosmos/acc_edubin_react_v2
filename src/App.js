@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes, Switch } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Teacher from './pages/Teacher';
+import TeachersList from './pages/TeachersList';
 
 
 
@@ -50,6 +51,8 @@ function App() {
           <Route exact path='/' Component={Home} />
 
           <Route exact path='/teacher-name' Component={Teacher} />
+
+          <Route exact path='/ict' Component={TeachersList} />
         </Routes>
         
 
