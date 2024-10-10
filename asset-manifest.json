@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/acc_edubin_react_v2/static/css/main.bafacc3f.css",
-    "main.js": "/acc_edubin_react_v2/static/js/main.0483af05.js",
+    "main.js": "/acc_edubin_react_v2/static/js/main.de669be1.js",
     "static/js/787.e8c90c55.chunk.js": "/acc_edubin_react_v2/static/js/787.e8c90c55.chunk.js",
     "static/media/debate.jpg": "/acc_edubin_react_v2/static/media/debate.d7bd06e2d3f957d018e9.jpg",
     "static/media/s-3.jpg": "/acc_edubin_react_v2/static/media/s-3.f72b5b0e0b79aeea54d8.jpg",
@@ -28,11 +28,11 @@
     "static/media/logo.svg": "/acc_edubin_react_v2/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/acc_edubin_react_v2/index.html",
     "main.bafacc3f.css.map": "/acc_edubin_react_v2/static/css/main.bafacc3f.css.map",
-    "main.0483af05.js.map": "/acc_edubin_react_v2/static/js/main.0483af05.js.map",
+    "main.de669be1.js.map": "/acc_edubin_react_v2/static/js/main.de669be1.js.map",
     "787.e8c90c55.chunk.js.map": "/acc_edubin_react_v2/static/js/787.e8c90c55.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bafacc3f.css",
-    "static/js/main.0483af05.js"
+    "static/js/main.de669be1.js"
   ]
 }
